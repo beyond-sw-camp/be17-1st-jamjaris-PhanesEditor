@@ -46,3 +46,6 @@ out/
 #### Node.js ###
 node_modules
 >>>>>>> b488995 (컨벤션 추가)
+
+### MAC OS ###
+.DS_Store
