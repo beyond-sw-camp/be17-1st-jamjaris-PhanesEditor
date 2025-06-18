@@ -39,4 +39,10 @@ out/
 
 ### VS Code ###
 .vscode/
+<<<<<<< HEAD
 >>>>>>> a9d0dfb (컨벤션설정)
+=======
+
+#### Node.js ###
+node_modules
+>>>>>>> b488995 (컨벤션 추가)
