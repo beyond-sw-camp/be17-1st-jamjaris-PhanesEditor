@@ -48,12 +48,11 @@
 * **스타일 가이드**: **Google Java Style Guide**를 따릅니다.
 * **자동 포맷팅**: IntelliJ 등 IDE의 Code Formatter 설정을 Google Style에 맞추고, 커밋 전 항상 포맷팅을 실행하여 코드 스타일을 통일합니다.
 
-### ⚛️ 프론트엔드 (React / TypeScript)
+### ⚛️ 프론트엔드 (React)
 
 * **핵심 도구**: **ESLint** 와 **Prettier** 를 사용하여 코드 스타일을 강제하고 통일합니다.
     * **ESLint**: 문법 오류, 잠재적 버그, 코딩 스타일 위반을 찾아냅니다.
-    * **Prettier**: 코드를 저장할 때마다 자동으로 포맷팅을 실행합니다.
-* **설정**: 프로젝트에 포함된 `.eslintrc.js`와 `.prettierrc` 설정을 모든 팀원이 공유하며, IDE에서 'Format on Save' 옵션을 활성화합니다.
+* **설정**: 프로젝트에 포함된 `.eslintrc.js` 설정을 모든 팀원이 공유하며, IDE에서 'Format on Save' 옵션을 활성화합니다.
 
 ---
 
