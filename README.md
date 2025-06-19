@@ -99,19 +99,19 @@
 </div>
 </details> -->
 
-#### 기본 SQL
+## 기본 SQL구문
 
-# 회원가입
+### 회원가입
 
 INSERT INTO users (
   user_id, nickname, profil_img, platform_key, platform, create_date, status, last_login, browser
 ) VALUES (
-  10001, '준선이', 'https://img.profiles.com/junsun.png', 'kakao_9999', 1, NOW(), 'a', NOW(), 'Chrome'
+  10001, '홍길동', 'https://img.example.com/junsun.png', 'kakao_9999', 1, NOW(), 'a', NOW(), 'Chrome'
 );
 
-![image](./image/회원가입.png)
+![image](./img/회원가입.png)
 
-# 기존 유저 인증
+### 기존 유저 인증
 
 SELECT user_id 
 FROM users 
@@ -119,7 +119,7 @@ WHERE platform_key = 'kakao_9999'
   AND platform = 1 
   AND status = 'a';
 
-![image](./image/기본유저인증.png)
+![image](./img/기본유저인증.png)
 
 
 ## 🏎️ 성능 개선
