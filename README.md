@@ -1,6 +1,6 @@
 # Phanes Editor
 <p align="middle" style="margin: 0; padding: 0;">
-  <img width="200px" src="./assets/image/5ven icon.png">
+  <!-- <img width="200px" src="./assets/image/5ven icon.png"> -->
 </p>
 
 <p align="middle">
@@ -28,7 +28,7 @@
 </figure>
 
 
-## 📝 프로젝트 소개
+## 프로젝트 소개
 
 > 'Phanes Editor'는 별도의 프로그램 설치 없이 웹 브라우저만으로 실시간 코드 공유 및 동시 편집이 가능한 웹 기반 페어 프로그래밍 서비스입니다.
 
@@ -37,12 +37,12 @@
 ## 🎞 프로젝트 기획서
 [프로젝트 기획서](#)
 
-## 📂 요구사항 정의서 
+## 요구사항 정의서 
 [요구사항 정의서](./assets/jamjaris.%20%EC%9A%94%EA%B5%AC%EC%82%AC%ED%95%AD%20%EC%A0%95%EC%9D%98%EC%84%9C.xlsx)
 ![요구사항 정의서](./assets/image/요구사항%20정의서.png) <!-- 이미지 -->
 <br>
 
-## ⚙️ ERD
+## ERD
 ![ERD](./img/%EC%84%A4%EA%B3%84%20ERD.png)
 <br>
 
@@ -54,9 +54,10 @@
   - 코드 작성, 채팅기능 등 쓰기 작업이 많아 여려대의 쓰기 서버 구성
   - 한 서버 노드가 다운되더라도 다른 노드가 서비스를 계속 제공하여 가용성이 높다.
   - 사용자가 증가해도 서버 확장성이 좋아 용이
+  
 - HAProxy
     - DB 클러스터의 읽기 작업 분산
-### DR(재난 복구) 시나리오
+<!-- ### DR(재난 복구) 시나리오
 <details>
 <summary>DB 클러스터</summary>
 <div markdown="1">
@@ -92,4 +93,4 @@
 - 추가로 HAProxy 설정 파일을 주기적으로 동기화 하여 동일한 환경 유지
 - 혹은 글로벌 서버 로드밸런싱을 사용하여 다중 지역 HAProxy를 사용
 </div>
-</details>
+</details> -->
