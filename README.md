@@ -122,8 +122,8 @@ CREATE INDEX idx_chats_project_id_sent_at_desc
 ON chats (project_id, sent_at DESC);  
 
 #### 성능 개선 전
-[image](chats 성능.png)
+[image] (./img/chats 성능.png)
 
 #### 성능 개선 후
 
-[image](./assets/img/스크린샷 2025-06-19 오후 6.00.12.png)
+[image] (./img/스크린샷 2025-06-19 오후 6.00.12.png)
