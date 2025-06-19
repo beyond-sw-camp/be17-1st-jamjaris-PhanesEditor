@@ -37,12 +37,9 @@
 ## 🎞 프로젝트 기획서
 [프로젝트 기획서](./assets/프로젝트 기획서.pdf)
 
-
 ## 요구사항 정의서 
-[요구사항 정의서](https://github.com/beyond-sw-camp/be17-1st-jamjaris-PhanesEditor/blob/main/img/%EC%A0%95%EC%9D%98%EC%84%9C1.png)
-[요구사항 정의서](https://github.com/beyond-sw-camp/be17-1st-jamjaris-PhanesEditor/blob/main/img/%EC%A0%95%EC%9D%98%EC%84%9C2.png)
-[요구사항 정의서](https://github.com/beyond-sw-camp/be17-1st-jamjaris-PhanesEditor/blob/main/img/%EC%A0%95%EC%9D%98%EC%84%9C3.png)
-
+[요구사항 정의서](./assets/jamjaris.%20%EC%9A%94%EA%B5%AC%EC%82%AC%ED%95%AD%20%EC%A0%95%EC%9D%98%EC%84%9C.xlsx)
+![요구사항 정의서](./assets/image/요구사항%20정의서.png) <!-- 이미지 -->
 <br>
 
 ## ERD
@@ -98,8 +95,6 @@
 </div>
 </details> -->
 
-<<<<<<< HEAD
-
 ## 🏎️ 성능 개선
 
 ### Why?
@@ -124,12 +119,4 @@ CREATE INDEX idx_chats_project_id_sent_at_desc ON chats (project_id, sent_at DES
 idx_chats_project_id_sent_at_desc 인덱스는 특정 project_id를 기준으로 채팅 메시지를 검색하고, 그 결과를 최신 sent_at 순으로 빠르게 가져오기 위해 최적화된 전략적인 인덱스임. 특히 서비스에서 '특정 프로젝트의 최근 채팅 목록'을 보여주는 기능이 있다면 이 인덱스가 핵심적인 역할하게 됨.
 
 CREATE INDEX idx_chats_project_id_sent_at_desc 
-ON chats (project_id, sent_at DESC);
-=======
-## 성능
- - SQL 쿼리
-    - [chats 성능 체크](https://github.com/beyond-sw-camp/be17-1st-jamjaris-PhanesEditor/blob/main/img/chats%20%EC%84%B1%EB%8A%A5.png)
-    - 100만개의 채팅 기록을 만들어 채팅기록 조회 성능을 확인했다.
-    - index를 사용해 기록을 단축시켰다.
-    - [성능개선](https://github.com/beyond-sw-camp/be17-1st-jamjaris-PhanesEditor/blob/main/img/image.png)
->>>>>>> 3f7d4ce57a300279b1f6bf38867aa46d7232af45
+ON chats (project_id, sent_at DESC);  
