@@ -13,12 +13,6 @@
 <figure>
     <table>
       <tr>
-        <td align="center"><img src="./img/a.png" width="180px"/></td>
-        <td align="center"><img src="./img/b.png" width="180px"/></td>
-        <td align="center"><img src="./img/c.png" width="180px"/></td>
-      	<td align="center"><img src="./img/d.png" width="180px"/></td>
-      </tr>
-      <tr>
         <td align="center">팀원: <a href="https://github.com/why48382">이현식</a></td>
         <td align="center">팀원: <a href="https://github.com/junsun-yeam">염준선</a></td>
         <td align="center">팀원: <a href="https://github.com/flcat" >권재찬</a></td>
