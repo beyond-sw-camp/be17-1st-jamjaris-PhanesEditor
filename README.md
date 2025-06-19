@@ -8,7 +8,7 @@
 <br>팀 잠자리들
 </p>
 
-## 팀원 소개
+## 팀원 소개 asdf
 
 <figure>
     <table>
@@ -20,7 +20,7 @@
       </tr>
       <tr>
         <td align="center">팀원: <a href="https://github.com/why48382">이현식</a></td>
-        <td align="center">팀원: <a href=#>염준선</a></td>
+        <td align="center">팀원: <a href="https://github.com/junsun-yeam">염준선</a></td>
         <td align="center">팀원: <a href="https://github.com/flcat" >권재찬</a></td>
         <td align="center">팀원: <a href="https://github.com/Jumil1">임주식</a></td>
       </tr>
