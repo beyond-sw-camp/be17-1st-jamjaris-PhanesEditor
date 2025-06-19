@@ -26,6 +26,8 @@
 
 > 'Phanes Editor'는 별도의 프로그램 설치 없이 웹 브라우저만으로 실시간 코드 공유 및 동시 편집이 가능한 웹 기반 페어 프로그래밍 서비스입니다.
 
+
+
 ## 🍔 기술 스택
 
 ![HAProxy](https://img.shields.io/badge/HAProxy-00A1E0?style=for-the-badge&logo=haproxy&logoColor=white)
@@ -97,6 +99,29 @@
 </div>
 </details> -->
 
+#### 기본 SQL
+
+# 회원가입
+
+INSERT INTO users (
+  user_id, nickname, profil_img, platform_key, platform, create_date, status, last_login, browser
+) VALUES (
+  10001, '준선이', 'https://img.profiles.com/junsun.png', 'kakao_9999', 1, NOW(), 'a', NOW(), 'Chrome'
+);
+
+![image](./image/회원가입.png)
+
+# 기존 유저 인증
+
+SELECT user_id 
+FROM users 
+WHERE platform_key = 'kakao_9999' 
+  AND platform = 1 
+  AND status = 'a';
+
+![image](./image/기본유저인증.png)
+
+
 ## 🏎️ 성능 개선
 
 ### Why?
@@ -129,3 +154,6 @@ ON chats (project_id, sent_at DESC);
 #### 성능 개선 후
 
 ![image](./img/%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7%202025-06-19%20%EC%98%A4%ED%9B%84%206.00.12.png)
+
+
+
