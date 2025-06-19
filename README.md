@@ -94,3 +94,30 @@
 - 혹은 글로벌 서버 로드밸런싱을 사용하여 다중 지역 HAProxy를 사용
 </div>
 </details> -->
+
+
+## 🏎️ 성능 개선
+
+### Why?
+#### idx_chats_project_id_sent_at_desc 인덱스 분석
+CREATE INDEX idx_chats_project_id_sent_at_desc ON chats (project_id, sent_at DESC);
+
+왜 이 인덱스를 만들었을까?
+이 인덱스는 주로 다음과 같은 쿼리의 성능을 향상시키기 위해 설계.
+
+특정 project_id의 채팅 메시지를 최신순으로 가져올 때:
+
+예시 쿼리: SELECT * FROM chats WHERE project_id = 123 ORDER BY sent_at DESC LIMIT 10;
+이 쿼리는 특정 프로젝트의 채팅 메시지 중에서 가장 최근에 전송된 메시지들을 가져올 때 사용. 이 인덱스는 project_id로 먼저 빠르게 해당 프로젝트의 채팅들을 찾고, 그 안에서 sent_at이 이미 내림차순(최신순)으로 정렬되어 있기 때문에 별도의 정렬 작업 없이 바로 데이터를 가져올 수 있음. 인덱스가 없다면 project_id로 필터링한 후 다시 sent_at 기준으로 정렬하는 추가적인 과정이 필요해 훨씬 느려짐
+특정 project_id의 채팅 메시지를 범위로 검색할 때:
+
+예시 쿼리: SELECT * FROM chats WHERE project_id = 123 AND sent_at > '2025-06-01 00:00:00' ORDER BY sent_at DESC;
+이 쿼리도 project_id를 기준으로 검색하고, sent_at에 대한 범위 조건과 정렬이 함께 사용될 때 인덱스가 유용.
+인덱스 컬럼 순서의 중요성 (project_id, sent_at DESC)
+인덱스에 여러 컬럼이 사용될 때는 컬럼의 순서가 매우 중요함. 이 인덱스의 경우 (project_id, sent_at DESC) 순서임.
+
+요약
+idx_chats_project_id_sent_at_desc 인덱스는 특정 project_id를 기준으로 채팅 메시지를 검색하고, 그 결과를 최신 sent_at 순으로 빠르게 가져오기 위해 최적화된 전략적인 인덱스임. 특히 서비스에서 '특정 프로젝트의 최근 채팅 목록'을 보여주는 기능이 있다면 이 인덱스가 핵심적인 역할하게 됨.
+
+CREATE INDEX idx_chats_project_id_sent_at_desc 
+ON chats (project_id, sent_at DESC);
