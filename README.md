@@ -122,8 +122,8 @@ CREATE INDEX idx_chats_project_id_sent_at_desc
 ON chats (project_id, sent_at DESC);  
 
 #### 성능 개선 전
-[image](https://github.com/beyond-sw-camp/be17-1st-jamjaris-PhanesEditor/blob/main/img/chats%20%EC%84%B1%EB%8A%A5.png?raw=true)
+[image](chats 성능.png)
 
 #### 성능 개선 후
 
-[image](https://github.com/beyond-sw-camp/be17-1st-jamjaris-PhanesEditor/blob/main/img/%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7%202025-06-19%20%EC%98%A4%ED%9B%84%206.00.12.png?raw=true)
+[image](./assets/img/스크린샷 2025-06-19 오후 6.00.12.png)
