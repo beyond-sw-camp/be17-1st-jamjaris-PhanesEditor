@@ -5,18 +5,18 @@
 
 <p align="middle">
 <h1>한화시스템 BEYOND SW캠프</h1>
-<br>팀 잠자리들
+<br>팀: 잠자리들
 </p>
 
-## 팀원 소개 asdf
+## 팀원 소개
 
 <figure>
     <table>
       <tr>
-        <td align="center"><img src="./img/샌드위치.png" width="180px"/></td>
-        <td align="center"><img src="./img/식빵.png" width="180px"/></td>
-        <td align="center"><img src="./img/반죽.png" width="180px"/></td>
-      	<td align="center"><img src="./img/밀가루.png" width="180px"/></td>
+        <td align="center"><img src="./img/a.png" width="180px"/></td>
+        <td align="center"><img src="./img/b.png" width="180px"/></td>
+        <td align="center"><img src="./img/c.png" width="180px"/></td>
+      	<td align="center"><img src="./img/d.png" width="180px"/></td>
       </tr>
       <tr>
         <td align="center">팀원: <a href="https://github.com/why48382">이현식</a></td>
@@ -32,14 +32,22 @@
 
 > 'Phanes Editor'는 별도의 프로그램 설치 없이 웹 브라우저만으로 실시간 코드 공유 및 동시 편집이 가능한 웹 기반 페어 프로그래밍 서비스입니다.
 
+## 🍔 기술 스택
+
+![HAProxy](https://img.shields.io/badge/HAProxy-00A1E0?style=for-the-badge&logo=haproxy&logoColor=white)
+![MariaDB](https://img.shields.io/badge/MariaDB-003545?style=for-the-badge&logo=mariadb&logoColor=white)
+
+![Prometheus](https://img.shields.io/badge/Prometheus-E6522C?style=for-the-badge&logo=Prometheus&logoColor=white)
+![Grafana](https://img.shields.io/badge/grafana-%23F46800.svg?style=for-the-badge&logo=grafana&logoColor=white)
+
 
 
 ## 🎞 프로젝트 기획서
-[프로젝트 기획서](./assets/프로젝트 기획서.pdf)
+[프로젝트 기획서](./assets/프로젝트%20기획서.pdf)
 
 ## 요구사항 정의서 
-[요구사항 정의서](./assets/jamjaris.%20%EC%9A%94%EA%B5%AC%EC%82%AC%ED%95%AD%20%EC%A0%95%EC%9D%98%EC%84%9C.xlsx)
-![요구사항 정의서](./assets/image/요구사항%20정의서.png) <!-- 이미지 -->
+[요구사항 정의서](./assets/요구사항정의서서.xlsx)
+
 <br>
 
 ## ERD
