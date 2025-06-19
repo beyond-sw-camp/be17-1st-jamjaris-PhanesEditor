@@ -106,10 +106,10 @@
 INSERT INTO users (
   user_id, nickname, profil_img, platform_key, platform, create_date, status, last_login, browser
 ) VALUES (
-  10001, '홍길동', 'https://img.example.com/junsun.png', 'kakao_9999', 1, NOW(), 'a', NOW(), 'Chrome'
+  10001, '준선이', 'exampleabcdefghijk.qwer', 'kakao_9999', 1, NOW(), 'a', NOW(), 'Chrome'
 );
 
-![image](./img/회원가입.png)
+[image](./img/회원가입.png)
 
 ### 기존 유저 인증
 
@@ -119,7 +119,7 @@ WHERE platform_key = 'kakao_9999'
   AND platform = 1 
   AND status = 'a';
 
-![image](./img/기본유저인증.png)
+[image](./img/기본유저인증.png)
 
 
 ## 🏎️ 성능 개선
