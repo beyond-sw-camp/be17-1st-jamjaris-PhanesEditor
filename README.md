@@ -109,7 +109,7 @@ INSERT INTO users (
   10001, '준선이', 'exampleabcdefghijk.qwer', 'kakao_9999', 1, NOW(), 'a', NOW(), 'Chrome'
 );
 
-[image](./img/회원가입.png)
+▶ [회원가입](./img/회원가입.png)
 
 ### 기존 유저 인증
 
@@ -119,7 +119,7 @@ WHERE platform_key = 'kakao_9999'
   AND platform = 1 
   AND status = 'a';
 
-[image](./img/기본유저인증.png)
+▶ [기본유저기능](./img/기본유저인증.png)
 
 
 ## 🏎️ 성능 개선
