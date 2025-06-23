@@ -5,7 +5,7 @@
 
 <p align="middle">
 <h1>한화시스템 BEYOND SW캠프</h1>
-<br>팀 잠자리들
+<br>팀: 잠자리들
 </p>
 
 ## 팀원 소개
@@ -13,14 +13,8 @@
 <figure>
     <table>
       <tr>
-        <td align="center"><img src="./img/샌드위치.png" width="180px"/></td>
-        <td align="center"><img src="./img/식빵.png" width="180px"/></td>
-        <td align="center"><img src="./img/반죽.png" width="180px"/></td>
-      	<td align="center"><img src="./img/밀가루.png" width="180px"/></td>
-      </tr>
-      <tr>
         <td align="center">팀원: <a href="https://github.com/why48382">이현식</a></td>
-        <td align="center">팀원: <a href=#>염준선</a></td>
+        <td align="center">팀원: <a href="https://github.com/junsun-yeam">염준선</a></td>
         <td align="center">팀원: <a href="https://github.com/flcat" >권재찬</a></td>
         <td align="center">팀원: <a href="https://github.com/Jumil1">임주식</a></td>
       </tr>
@@ -34,12 +28,22 @@
 
 
 
+## 🍔 기술 스택
+
+![HAProxy](https://img.shields.io/badge/HAProxy-00A1E0?style=for-the-badge&logo=haproxy&logoColor=white)
+![MariaDB](https://img.shields.io/badge/MariaDB-003545?style=for-the-badge&logo=mariadb&logoColor=white)
+
+![Prometheus](https://img.shields.io/badge/Prometheus-E6522C?style=for-the-badge&logo=Prometheus&logoColor=white)
+![Grafana](https://img.shields.io/badge/grafana-%23F46800.svg?style=for-the-badge&logo=grafana&logoColor=white)
+
+
+
 ## 🎞 프로젝트 기획서
-[프로젝트 기획서](./assets/프로젝트 기획서.pdf)
+[프로젝트 기획서](./assets/프로젝트%20기획서.pdf)
 
 ## 요구사항 정의서 
-[요구사항 정의서](./assets/jamjaris.%20%EC%9A%94%EA%B5%AC%EC%82%AC%ED%95%AD%20%EC%A0%95%EC%9D%98%EC%84%9C.xlsx)
-![요구사항 정의서](./assets/image/요구사항%20정의서.png) <!-- 이미지 -->
+[요구사항 정의서](./img/요구사항정의서.png)
+
 <br>
 
 ## ERD
@@ -95,6 +99,29 @@
 </div>
 </details> -->
 
+## 기본 SQL구문
+
+### 회원가입
+
+INSERT INTO users (
+  user_id, nickname, profil_img, platform_key, platform, create_date, status, last_login, browser
+) VALUES (
+  10001, '준선이', 'exampleabcdefghijk.qwer', 'kakao_9999', 1, NOW(), 'a', NOW(), 'Chrome'
+);
+
+▶ [회원가입](./img/회원가입.png)
+
+### 기존 유저 인증
+
+SELECT user_id 
+FROM users 
+WHERE platform_key = 'kakao_9999' 
+  AND platform = 1 
+  AND status = 'a';
+
+▶ [기본유저기능](./img/기본유저인증.png)
+
+
 ## 🏎️ 성능 개선
 
 ### Why?
@@ -127,3 +154,6 @@ ON chats (project_id, sent_at DESC);
 #### 성능 개선 후 ㅎㅜ
 
 ![image](./img/%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7%202025-06-19%20%EC%98%A4%ED%9B%84%206.00.12.png)
+
+
+
