@@ -50,6 +50,9 @@
 ![ERD](./img/%EC%84%A4%EA%B3%84%20ERD.png)
 <br>
 
+## DDL
+[DDL](./assets/sql/phanes.sql)
+
 ## 🔀 시스템 아키텍처
 ![시스템 아키텍처](./img/DB%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8%20%EC%95%84%ED%82%A4%ED%85%8D%EC%B2%98.png)
 <br>
